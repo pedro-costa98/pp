@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Painéis Publicitários - AlexCreativ</title>
+</head>
+<body>
+    <nav> 
+        
+		<div class="ptopnav">
+			<a href="../index.html"><img class="plogo" src="img/logo.png"></a>
+			<div class="hmenu">
+				<div class="pline pline1"></div>
+				<div class="pline pline2"></div>
+				<div class="pline pline3"></div>
+			</div>
+		</div>
+	   
+
+
+		<div class="psidenav">
+
+			<li><a href="index.html" class="pnav-item active">Home</a>
+			</li>          
+						 
+	   
+		
+			<li><a  id="pnav-item1" class="pni-closed">Paineis</a>
+				<ul class="psubnav1">
+					<li><a href="tenseone.html">Tense One</a></li>
+					<li><a href="spring.html">spring</a></li>
+					<li><a href="fox.html">fox</a></li>
+					<li><a href="frame.html">frame</a></li>
+					<li><a href="board.html">board</a></li>
+					<li><a href="speedwall.html">speedwall</a></li>
+				</ul> 
+			</li>
+			
+			<li><a  id="pnav-item2" class="pni-closed">Placas</a>
+				<ul class="psubnav2">
+					<li><a href="placa-luxbond.html">luxbond</a></li>
+					<li><a href="placa-acr.html">acrílico</a></li>
+					<li><a href="placa-pvc.html">pvc</a></li>
+				   
+				</ul> 
+			</li>    
+		</div> 
+	
+	
+</nav>
+
+
+
+
+
+    <div class="pcont">
+
+        <h1>Painéis Publicitários</h1>
+        <h3>Escolha um painel:</h3>
+
+        <div class="ptypes">
+            <h3 id="ptype1" onclick="act_ptype1()" class="ptype-active">com iluminação</h3>
+            <h3 id="ptype2" onclick="act_ptype2()">sem iluminação</h3>
+            <h3 id="ptype3" onclick="act_ptype3()">placas</h3>
+        </div>
+
+
+        <div id="ptype-cards"> 
+            <div id="ptype1-cards">
+                <div class="pcards-row">
+                    <div class="pcard">
+                        <h2>Tense One</h2>
+                        <img class="pcard-img" src="img/tenseone.png">
+                    </div>
+
+                    <div class="pcard">
+                        <h2>Spring</h2>
+                        <img class="pcard-img" src="img/spring.png">
+                    </div>
+                </div> 
+                
+                <div class="pcards-row">
+                    <div class="pcard">
+                        <h2>Fox</h2>
+                        <img class="pcard-img" src="img/fox.png">
+                    </div>
+
+                    <div class="pcard">
+                        <h2>frame</h2>
+                        <img class="pcard-img" src="img/frame.png">
+                    </div>
+                </div>
+            </div> 
+
+            <div id="ptype2-cards">
+                <div class="pcards-row">
+                    <div class="pcard">
+                        <h2>Board</h2>
+                        <img class="pcard-img" src="img/board.png">
+                    </div>
+
+                    <div class="pcard">
+                        <h2>Speed Wall</h2>
+                        <img class="pcard-img" src="img/speedwall.png">
+                    </div>
+                </div> 
+                
+                <div class="pcards-row">
+                    
+                </div>
+            </div>
+            
+            <div id="ptype3-cards">
+                <div class="pcards-row">
+                    <div class="pcard">
+                        <h2>Luxbond</h2>
+                        <img class="pcard-img" src="img/lux.png">
+                    </div>
+
+                    <div class="pcard">
+                        <h2>Acrílico</h2>
+                        <img class="pcard-img" src="img/acr.png">
+                    </div>
+                </div> 
+                
+                <div class="pcards-row">
+                    <div class="pcard">
+                        <h2>PVC</h2>
+                        <img class="pcard-img" src="img/pvc.png">
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    
+    <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".pcard, .plogo"), {
+            max: 15,
+            speed: 400,
+            glare: 1,
+            "max-glare": 0.4,
+        });	
+        </script>   
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+</body>
+<footer class="pfooter">
+    <p> 
+     <span> Painéis Publicitários </span> 
+     <span> Copyright © 2021 - AlexCreativ. </span> 
+     <span> Designed by Pedro Costa.</span> 
+   </p>
+</footer>
+</html>

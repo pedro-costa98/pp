@@ -1,0 +1,35 @@
+
+body {
+    background-color: rgb(255, 255, 255);    
+}
+
+.inputcont {
+    width: 90%;
+    max-width: 2000px;    
+    margin: 0 auto;
+}
+
+.tablecont{
+    width: 90%;
+    max-width: 2000px;    
+    margin: 0 auto;
+    
+    
+}
+
+.mat-table {
+
+    overflow-x: scroll;
+    white-space: nowrap;
+   
+
+}
+
+.ptopnav {
+    background-color: #0b0d24;
+}
+
+.psidenav {
+    background-color: #0b0d24;
+}
+

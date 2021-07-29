@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<title>Placa PVC</title>
+	
+
+	<link href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+	<nav> 
+        
+		<div class="ptopnav">
+			<a href="../index.html"><img class="plogo" src="img/logo.png"></a>
+			<div class="hmenu">
+				<div class="pline pline1"></div>
+				<div class="pline pline2"></div>
+				<div class="pline pline3"></div>
+			</div>
+		</div>
+	   
+
+
+		<div class="psidenav">
+
+			<li><a href="index.html" class="pnav-item active">Home</a>
+			</li>          
+						 
+	   
+		
+			<li><a  id="pnav-item1" class="pni-closed">Paineis</a>
+				<ul class="psubnav1">
+					<li><a href="tenseone.html">Tense One</a></li>
+					<li><a href="spring.html">spring</a></li>
+					<li><a href="fox.html">fox</a></li>
+					<li><a href="frame.html">frame</a></li>
+					<li><a href="board.html">board</a></li>
+					<li><a href="speedwall.html">speedwall</a></li>
+				</ul> 
+			</li>
+			
+			<li><a  id="pnav-item2" class="pni-closed">Placas</a>
+				<ul class="psubnav2">
+					<li><a href="placa-luxbond.html">luxbond</a></li>
+					<li><a href="placa-acr.html">acrílico</a></li>
+					<li><a href="placa-pvc.html">pvc</a></li>
+				   
+				</ul> 
+			</li>    
+		</div> 
+	
+	
+</nav>
+
+
+
+
+			
+		<div class="container" style="margin-top: 3rem;">
+
+			<h1 class="tit"><span style="color: #59595B;">Placa</span> <span style="color: #61B9C2;">PVC</span></h1>
+
+			<div class="row">
+
+					<!-- ROW 1 -->
+					<div class="row"> 
+
+						<div class="col-md-3"  >
+							<label for="comp">Comprimento:</label>
+						</div>
+
+						<div class="col" >
+							<input id="comp" class="input-box" type="number" step="any" name="comp" oninput="validcomp(), show_kitsus_aviso()">
+
+							<span id="complabel">m</span>
+
+							<span id="compERRO" style="display: none; color: red;">Valor incorrecto.</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+					<!-- ROW 2 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="alt">Altura:</label>
+						</div>
+
+						<div class="col">
+								<input id="alt" class="input-box" type="number" step="any" name="alt" oninput="validalt(), show_kitsus_aviso()">
+								<span id="altlabel">m</span>
+
+								<span id="altERRO" style="display: none; color: red;">Valor incorrecto.</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+
+					
+
+
+					<!-- ROW 4 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="esp_box">Espessura:</label>
+						</div>
+
+						<div class="col">
+								<select oninput="valid_esp(), enable_aplSuspenso(), show_kitsus()" class="select-box" id="esp_box">
+								
+								<option value="esp_0" id="esp_0">--------------</option>
+								<option value="esp_3" id="esp_3">3 mm</option>
+								<option value="esp_5" id="esp_5">5 mm</option>
+								<option value="esp_8" id="esp_8">8 mm</option>
+								<option value="esp_10" id="esp_10">10 mm</option>
+
+							</select>
+								<span id="espERRO" style="display: none; color: red;">Selecione uma das opções</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+					
+
+
+					<!-- ROW 4.5 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions10">Vinil:</label>
+						</div>
+
+						<div class="col">
+								<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="vnlSim" value="option1" oninput="valid_vnl()">
+							  <label class="form-check-label" for="vnlSim">Sim</label>
+							</div>
+
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="vnlNao" value="option4" oninput="valid_vnl()">
+							  <label class="form-check-label" for="vnlNao">Não</label>
+							</div>
+							
+							
+
+								<span id="vnlERRO" style="display: none; color: red;">Selecione uma das opções.</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+
+
+
+
+
+
+					<!-- ROW 5 -->
+				<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions2">Aplicação:</label>
+						</div>
+
+
+
+						<div class="col">
+
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="aplParede" value="option2" oninput="valid_apl(), show_kitsus()">
+							  <label class="form-check-label" for="aplParede">Parede</label>
+							</div>	
+
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="aplSuspenso" value="option1" oninput="valid_apl(), show_kitsus(), show_kitsus_aviso()" disabled>
+							  <label class="form-check-label" for="aplSuspenso">Suspenso</label>
+							</div>	
+
+
+														
+
+							<span id="aplERRO" style="display: none; color: red;">Selecione uma das opções.</span>												 
+
+						</div>
+
+					</div>
+					<!----------->
+
+
+					
+
+
+					<!-- ROW 6 -->
+				<div class="row" id="row_kitsus_input" style="display: none"> 
+
+						<div class="col-md-3">
+							<label for="kitsus_box">Kits Suspensão:</label>
+						</div>
+
+
+
+						<div class="col">
+										<select oninput="show_kitsus_aviso()" class="select-box" id="kitsus_box" >								
+										
+										<option value="kitsus_2" id="kitsus_2">2 (MIN)</option>
+										<option value="kitsus_3" id="kitsus_3">3</option>
+										<option value="kitsus_4" id="kitsus_4">4</option>
+										
+
+										</select>	
+
+
+
+							<span id="kitsusAVISO" style="display: none; color: blue;">*Atenção ao peso da placa</span>												 
+
+						</div>
+
+					</div>
+					<!----------->
+
+					
+
+
+					
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- ROW 7 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions2">Deslocação:</label>
+						</div>
+
+						<div class="col">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dlcN" value="option1" oninput="showKM(), validdlc()">
+							  <label class="form-check-label" for="dlcN">Não</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dlcS" value="option2" oninput="showKM(), validdlc()">
+							  <label class="form-check-label" for="dlcS">Sim</label>
+							</div>
+
+							<input style="display: none" id="dlcKM" name="dlcKM" class="input-box" type="number" step="any" oninput="validdlc()">
+
+							<span style="display: none" id="dlclabel">Km</span>
+								
+
+							<span id="dlcERRO" style="display: none; color: red;">Selecione uma das opções.</span>
+							<span id="dlcERRO2" style="display: none; color: red;">Valor incorrecto.</span>								 
+
+						</div>
+
+					</div>
+
+					<!----------->
+
+
+					<!-- ROW 8 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions3">Montagem:</label>
+						</div>
+
+						<div class="col">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="mntN" value="option1" oninput="showmntP(), validmnt()">
+							  <label class="form-check-label" for="mntN">Não </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="mntS" value="option2" oninput="showmntP(), validmnt()" >
+							  <label class="form-check-label" for="mntS">Sim</label>
+							</div>	
+
+							<input  style="display: none" id="mntP" name="mntP" class="input-box" type="number" step="any" oninput="validmnt()">
+
+							<span style="display: none" id="mntlabel">€</span>						
+								
+
+							<span id="mntERRO" style="display: none; color: red;">Selecione uma das opções.</span>
+							<span id="mntERRO2" style="display: none; color: red;">Valor incorrecto.</span>
+														 
+
+						</div>
+					</div>
+					<!----------->
+
+
+
+ 
+
+
+
+
+
+
+<br><br>
+
+					
+		
+			<input id="calc-btn" type="button" onClick="showKM(), showmntP(), validcomp(), validalt(), valid_esp(), valid_vnl(), valid_apl(), validdlc(), validmnt(), confirmvalid(), calc()" value="CALCULAR" style="color:#fff" />
+
+
+			</div>
+			
+
+		<br><br>
+
+					<table class="table" id="myTable2">
+					
+					  <thead>
+					    <tr class="align-middle">
+					      <th scope="col">SERVIÇO</th>					      					      
+					      <th scope="col">PREÇO</th>					      
+					    </tr>
+					  </thead>
+					  <tbody>
+
+					    <tr class="align-middle"> <!--MATERIAL -->
+					      <td>Material</td>					      					      
+					      <td><span id="matPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--DESLOCAÇÃO -->
+					      <td>Deslocação</td>					      					      
+					      <td><span id="dlcPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--MONTAGEM -->
+					      <td>Montagem</td>					      					      
+					      <td><span id="mntPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--TOTAL-->
+					      <td><b>TOTAL: </b></td>					      					      
+					      <td><b><span id="precototal"></span>€</b></td>					      
+					    </tr>
+
+					 </tbody>
+					</table>
+
+					<br><br>
+
+
+				<div class="mat-table">
+					<table class="table" id="myTable">
+
+					  <thead>
+					    <tr class="align-middle">
+					      <th scope="col">REFERÊNCIA</th>
+					      <th scope="col">ITEM</th>
+					      <th scope="col">IMAGEM</th>
+					      <th scope="col">QTD</th>
+					      <th scope="col">UNI</th>
+					      <th scope="col">MEDIDA/UND</th>					      
+					      <th scope="col">PREÇO</th>
+					      
+					    </tr>
+					  </thead>
+
+
+					  <tbody>
+					    <tr class="align-middle"> <!-- PVC -->
+					      <td><span id="pvcREF"></span></td>
+					      <td>PVC <span id="pvc_esp"> </span></td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/pvc.jpg" ></div></td>
+					      <td><span id="pvcMT"></span></td>
+					      <td>M2</td>
+					      <td></td>					      
+					      <td><span id="pvcPT"></span>€</td>
+					      
+					    </tr>
+
+					    <tr class="align-middle" id="row_vnl"> <!-- VINIL -->
+					      <td>VINIL</td>
+					      <td>Vinil</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/vinil.jpg" ></div></td>
+					      <td><span id="vnlMT"></span></td>
+					      <td>M2</td>
+					      <td></td>					      
+					      <td><span id="vnlPT"></span>€</td>
+					      
+					    </tr>
+
+					    <tr class="align-middle" id="row_kitsus"> <!-- KIT SUSPENSÃO -->
+					      <td>9997.10.FXKTOULOUSEBPS</td>
+					      <td>Kit Suspensão</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/kitsusp.jpg" ></div></td>
+					      <td><span id="kitsusU"></span></td>
+					      <td>UND</td>
+					      <td></td>					      
+					      <td><span id="kitsusPT"></span>€</td>
+					      
+					    </tr>
+
+	
+					    
+					  </tbody>
+					</table>
+				</div>
+
+
+</div> <!--CONTAINER-->
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="js/precos.js"></script>
+<script type="text/javascript" src="bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js" ></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+
+
+function enable_aplSuspenso() {
+
+	if (document.getElementById("esp_5").selected == true) {
+		document.getElementById("aplSuspenso").disabled = false;
+	}
+
+	else {
+		document.getElementById("aplSuspenso").disabled = true;
+		document.getElementById("aplSuspenso").checked = false;
+	}
+
+}
+
+
+	
+
+	function showKM() {
+	if (document.getElementById("dlcS").checked == true) {
+
+		document.getElementById("dlcKM").style.display = "inline";
+		document.getElementById("dlclabel").style.display = "inline";
+
+	}
+
+	else {
+
+		document.getElementById("dlcKM").style.display = "none";
+		document.getElementById("dlclabel").style.display = "none";
+
+	}
+	}
+
+
+
+	function showmntP() {
+	if (document.getElementById("mntS").checked == true) {
+
+		document.getElementById("mntP").style.display = "inline";
+		document.getElementById("mntlabel").style.display = "inline";
+
+	}
+
+	else {
+
+		document.getElementById("mntP").style.display = "none";
+		document.getElementById("mntlabel").style.display = "none";
+
+	}
+	}
+
+
+
+	
+
+	
+
+
+
+
+function show_kitsus() {
+		if (document.getElementById("aplSuspenso").checked) {
+			document.getElementById("row_kitsus_input").style.display = "flex";
+
+		}
+		else {
+			document.getElementById("row_kitsus_input").style.display = "none";
+		}
+	}
+
+function show_kitsus_aviso() {
+	if (
+			(document.getElementById("aplSuspenso").checked ) &
+		  (parseFloat(document.getElementById("alt").value)  ) * ( parseFloat(document.getElementById("comp").value)  ) >= 0.5
+		 ) {
+		document.getElementById("kitsusAVISO").style.display = "inline";
+	}
+	else {
+
+		document.getElementById("kitsusAVISO").style.display = "none";
+
+	}
+}
+	
+
+
+
+
+
+
+	document.getElementById('myTable').style.display = "none";
+
+	document.getElementById('myTable2').style.display = "none";
+
+
+
+
+
+		function validcomp() {
+		//comp
+		if (document.getElementById("comp").value == "" || document.getElementById("comp").value <= 0 ) { 
+
+        	document.getElementById("comp").style.border = "2px solid red";
+        	document.getElementById("compERRO").style.display = "inline";
+        }
+        else {        	
+        	document.getElementById("comp").style.border = "";
+        	document.getElementById("compERRO").style.display = "none";	
+        }
+        //-------------
+    	}
+        
+
+        function validalt() {
+        //alt
+		if (document.getElementById("alt").value == "" || document.getElementById("alt").value <= 0) {        	
+        	
+        	document.getElementById("alt").style.border = "2px solid red";
+        	document.getElementById("altERRO").style.display = "inline";
+        }
+        else {        	
+        	document.getElementById("alt").style.border = "";
+        	document.getElementById("altERRO").style.display = "none";
+        }
+        //-------------
+    	}
+    	
+
+
+		function validdlc() {  
+
+        //dlc radio
+
+        if (document.getElementById("dlcN").checked ||
+        	document.getElementById("dlcS").checked
+        	
+        	) {
+
+        	document.getElementById("dlcERRO").style.display = "none";
+        }
+        else {
+        	document.getElementById("dlcERRO").style.display = "inline";
+        }
+        //--------------
+
+         //dlc inputbox
+
+
+        if (document.getElementById("dlcS").checked &&
+         (  document.getElementById("dlcKM").value == "" || document.getElementById("dlcKM").value <= 0 )
+
+         ) {
+        	document.getElementById("dlcERRO2").style.display = "inline";
+        	document.getElementById("dlcKM").style.border = "2px solid red";
+	        }
+	    
+	    else {
+
+	        document.getElementById("dlcERRO2").style.display = "none";
+	        document.getElementById("dlcKM").style.border = "";
+	    }
+
+
+	    if (document.getElementById("dlcN").checked) {
+	    	document.getElementById("dlcKM").value = 0;
+	    }
+	    else {
+	    	
+	    }
+    	//--------------
+
+		}
+
+
+		function validmnt() { 
+		
+		//mnt radio
+
+        if (document.getElementById("mntN").checked ||
+        	document.getElementById("mntS").checked
+        	
+        	) {
+
+        	document.getElementById("mntERRO").style.display = "none";
+        }
+        else {
+        	document.getElementById("mntERRO").style.display = "inline";
+        }
+        //--------------
+
+		//mnt inputbox
+
+
+        if (document.getElementById("mntS").checked &&
+         (  document.getElementById("mntP").value == "" || document.getElementById("mntP").value <= 0 )
+
+         ) {
+        	document.getElementById("mntERRO2").style.display = "inline";
+        	document.getElementById("mntP").style.border = "2px solid red";
+	        }
+	    
+	    else {
+
+	        document.getElementById("mntERRO2").style.display = "none";
+	        document.getElementById("mntP").style.border = "";
+	    }
+
+
+	    if (document.getElementById("mntN").checked) {
+	    	document.getElementById("mntP").value = 0;
+	    }
+	    else {
+	    	
+	    }
+    	//--------------
+
+		}
+
+
+
+
+
+
+
+
+
+
+function valid_esp() {
+	if (document.getElementById("esp_0").selected == true ) {
+
+			document.getElementById("espERRO").style.display = "inline";
+			document.getElementById("esp_box").style.border = "2px solid red";
+	}
+	else {
+			document.getElementById("espERRO").style.display = "none";
+			document.getElementById("esp_box").style.border = "";
+
+	}
+}
+
+
+
+function valid_vnl() {
+	if (document.getElementById("vnlSim").checked == false &
+		  document.getElementById("vnlNao").checked == false) {
+
+			document.getElementById("vnlERRO").style.display = "inline";
+	}
+	else  {
+		document.getElementById("vnlERRO").style.display = "none";
+	}
+}
+
+
+
+
+function clearespbox() {
+
+	document.getElementById("esp_0").selected = true;
+
+}
+
+
+
+function valid_apl() {
+	if (document.getElementById("aplSuspenso").checked == false &
+		  document.getElementById("aplParede").checked == false ) {
+
+		document.getElementById("aplERRO").style.display = "inline";
+	}
+	else {
+		document.getElementById("aplERRO").style.display = "none";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+function confirmvalid() {
+        //verificar se está tudo preenchido para mostrar tabela
+        if (
+			document.getElementById("comp").value == "" || document.getElementById("comp").value <= 0 ||
+
+			document.getElementById("alt").value == "" || document.getElementById("alt").value <= 0 ||
+
+
+			document.getElementById("dlcN").checked == false && document.getElementById("dlcS").checked == false ||
+
+			( document.getElementById("dlcS").checked && (  document.getElementById("dlcKM").value == "" || document.getElementById("dlcKM").value <= 0 )	)  ||
+
+			document.getElementById("mntN").checked == false && document.getElementById("mntS").checked == false ||
+
+			( document.getElementById("mntS").checked && (  document.getElementById("mntP").value == "" || document.getElementById("mntP").value <= 0 )	) ||
+
+			
+
+	 		
+			(document.getElementById("esp_0").selected == true) ||
+
+
+			(document.getElementById("vnlSim").checked == false &
+		  document.getElementById("vnlNao").checked == false ) ||
+
+
+			(document.getElementById("aplSuspenso").checked == false &
+		  document.getElementById("aplParede").checked == false )
+
+		  
+
+			
+			
+			) {
+
+			document.getElementById('myTable').style.display = "none";
+			document.getElementById('myTable2').style.display = "none";
+			
+		}
+		else {
+			document.getElementById('myTable').style.display = "table";
+			document.getElementById('myTable2').style.display = "table";			
+		}
+
+
+}
+
+
+
+
+
+	
+
+</script>
+
+<script type="text/javascript">	
+
+	function calc()
+{
+        var alt = parseFloat(document.getElementById("alt").value);
+        var comp = parseFloat(document.getElementById("comp").value);
+        var area = alt * comp;
+        
+        
+       
+
+        var medidaMin = Math.min(alt, comp);
+        var medidaMax = Math.max(alt, comp);
+
+
+
+        //PVC //
+
+        var pvcREF;
+        var pvc_esp;
+        var pvcMT = comp * alt;
+        var pvcP;
+        var pvcPT;
+
+        if (document.getElementById("esp_3").selected) {
+        	pvcREF = "804.10.FEF03";
+        	pvc_esp = "3 mm";
+        	pvcP = pvc_3_PM2;
+        }
+        else if (document.getElementById("esp_5").selected){
+        	pvcREF = "804.10.FEF05";
+        	pvc_esp = "5 mm";
+        	pvcP = pvc_5_PM2;
+        }
+        else if (document.getElementById("esp_8").selected){
+        	pvcREF = "804.10.FEF08";
+        	pvc_esp = "8 mm";
+        	pvcP = pvc_8_PM2;
+        }
+        else if (document.getElementById("esp_10").selected){
+        	pvcREF = "804.10.FEF10";
+        	pvc_esp = "10 mm";
+        	pvcP = pvc_10_PM2;
+        }
+        else {
+        	pvcREF = "ERRO";
+        	pvc_esp = "ERRO";
+        	pvcP = 0;
+        }
+
+
+        pvcPT = pvcP * pvcMT; 
+
+        document.getElementById("pvcREF").innerHTML = pvcREF;
+        document.getElementById("pvc_esp").innerHTML = pvc_esp;
+        document.getElementById("pvcMT").innerHTML = parseFloat( pvcMT.toFixed(3) );
+        document.getElementById("pvcPT").innerHTML = pvcPT.toFixed(2);
+
+
+        //------------------------------------------------------------------//
+
+
+
+        //VINIL//
+
+         var vnlMT;
+         var vnlPT;
+
+         if (document.getElementById("vnlSim").checked) {
+         		vnlMT = comp * alt;
+         		vnlPT = vnlMT * vinilPM2;
+         		document.getElementById("row_vnl").style.display = "table-row";
+         }
+         else {
+         		vnlMT = 0;
+         		vnlPT = 0;
+         		document.getElementById("row_vnl").style.display = "none";
+         }
+
+
+
+
+         
+
+         document.getElementById("vnlMT").innerHTML = parseFloat (vnlMT.toFixed(3));
+         document.getElementById("vnlPT").innerHTML = vnlPT.toFixed(2);
+
+         //-----------------------------------------------------------------------//
+        
+
+		
+
+        //KIT SUSPENSÃO//
+        var kitsusU;
+
+        if (document.getElementById("aplSuspenso").checked) {
+
+        		if (document.getElementById("kitsus_2").selected == true) {
+        			kitsusU = 2;
+        		}
+        		else if (document.getElementById("kitsus_3").selected == true) {
+        			kitsusU = 3;
+        		}
+        		else if (document.getElementById("kitsus_4").selected == true) {
+        			kitsusU = 4;
+        		}
+        		else {
+        			kitsusU = 0;
+        			
+        		}
+
+        		
+
+        }
+
+        else {
+        	kitsusU = 0;
+        	
+        	
+        }
+
+        
+        var kitsusPT = kitsusU * kitsusPU;
+
+        document.getElementById("kitsusU").innerHTML = kitsusU;
+        document.getElementById("kitsusPT").innerHTML = kitsusPT.toFixed(2);
+
+
+        if (document.getElementById("aplSuspenso").checked) {
+        	document.getElementById("row_kitsus").style.display = "table-row";
+
+        }
+        else {
+        	document.getElementById("row_kitsus").style.display = "none";
+        }
+
+        //-----------------------------------------------------------------------//
+
+
+        
+
+  
+
+        //DESLOCAÇÃO//
+
+        var dlcKM = parseFloat(document.getElementById("dlcKM").value);
+
+
+        //---------PREÇO
+
+        var dlcPT = dlcPKM * dlcKM;
+
+        document.getElementById("dlcPT").innerHTML = dlcPT.toFixed(2);
+
+        //---------------------------------------------------------------//
+
+
+        //MONTAGEM//
+
+        //---------PREÇO
+
+        var mntP = parseFloat(document.getElementById("mntP").value);
+
+
+
+
+        document.getElementById("mntPT").innerHTML = mntP.toFixed(2);
+
+        
+
+        //---------------------------------------------------------------//
+
+
+        
+
+
+        //MAT PREÇO TOTAL//
+
+        var matPT = pvcPT	+
+        						vnlPT+
+        						kitsusPT        																
+        				 	;
+
+
+
+         document.getElementById("matPT").innerHTML = matPT.toFixed(2);
+        //---------------------------------------------------------------//
+
+        //PREÇO TOTAL//
+
+        var precototal = matPT + dlcPT + mntP;
+
+         document.getElementById("precototal").innerHTML = precototal.toFixed(2);
+        //---------------------------------------------------------------//
+
+
+
+        
+
+
+
+       
+}
+
+
+
+</script>
+
+
+<script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".pcard, .plogo"), {
+            max: 15,
+            speed: 400,
+            glare: 1,
+            "max-glare": 0.4,
+        });	
+        </script>   
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+
+
+
+
+
+</body>
+</html>

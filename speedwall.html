@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<title>Painél Speed Wall</title>
+	
+
+	<link href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+	<nav> 
+        
+		<div class="ptopnav">
+			<a href="../index.html"><img class="plogo" src="img/logo.png"></a>
+			<div class="hmenu">
+				<div class="pline pline1"></div>
+				<div class="pline pline2"></div>
+				<div class="pline pline3"></div>
+			</div>
+		</div>
+	   
+
+
+		<div class="psidenav">
+
+			<li><a href="index.html" class="pnav-item active">Home</a>
+			</li>          
+						 
+	   
+		
+			<li><a  id="pnav-item1" class="pni-closed">Paineis</a>
+				<ul class="psubnav1">
+					<li><a href="tenseone.html">Tense One</a></li>
+					<li><a href="spring.html">spring</a></li>
+					<li><a href="fox.html">fox</a></li>
+					<li><a href="frame.html">frame</a></li>
+					<li><a href="board.html">board</a></li>
+					<li><a href="speedwall.html">speedwall</a></li>
+				</ul> 
+			</li>
+			
+			<li><a  id="pnav-item2" class="pni-closed">Placas</a>
+				<ul class="psubnav2">
+					<li><a href="placa-luxbond.html">luxbond</a></li>
+					<li><a href="placa-acr.html">acrílico</a></li>
+					<li><a href="placa-pvc.html">pvc</a></li>
+				   
+				</ul> 
+			</li>    
+		</div> 
+	
+	
+</nav>
+
+
+
+
+			
+		<div class="container" style="margin-top: 3rem;">
+
+			<h1 class="tit"><span style="color: #59595B;">Painél</span> <span style="color: #61B9C2;">Speed Wall</span></h1>
+
+			<div class="row">
+
+					<!-- ROW 1 -->
+					<div class="row"> 
+
+						<div class="col-md-3"  >
+							<label for="comp">Comprimento:</label>
+						</div>
+
+						<div class="col" >
+							<input id="comp" class="input-box" type="number" step="any" name="comp" oninput="validcomp()">
+
+							<span id="complabel">m</span>
+
+							<span id="compERRO" style="display: none; color: red;">Valor incorrecto.</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+					<!-- ROW 2 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="alt">Altura:</label>
+						</div>
+
+						<div class="col">
+								<input id="alt" class="input-box" type="number" step="any" name="alt" oninput="validalt()">
+								<span id="altlabel">m</span>
+
+								<span id="altERRO" style="display: none; color: red;">Valor incorrecto.</span>							
+						</div>
+
+					</div>
+					<!----------->
+
+					
+
+					
+
+
+					<!-- ROW 5 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions">Tela:</label>
+						</div>
+
+						<div class="col">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="telanada" value="option1" oninput="validtela()">
+							  <label class="form-check-label" for="telanada">Nada</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="telavinil" value="option2" oninput="validtela()">
+							  <label class="form-check-label" for="telavinil">Vinil</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="telaimp" value="option3" oninput="validtela()">
+							  <label class="form-check-label" for="telaimp">Impressão Digital</label>
+							</div>	
+
+							<span id="telaERRO" style="display: none; color: red;">Selecione um tipo de tela.</span>								 
+
+						</div>
+
+						
+					</div>
+					<!----------->
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- ROW 7 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions2">Deslocação:</label>
+						</div>
+
+						<div class="col">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dlcN" value="option1" oninput="showKM(), validdlc()">
+							  <label class="form-check-label" for="dlcN">Não</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dlcS" value="option2" oninput="showKM(), validdlc()">
+							  <label class="form-check-label" for="dlcS">Sim</label>
+							</div>
+
+							<input style="display: none" id="dlcKM" name="dlcKM" class="input-box" type="number" step="any" oninput="validdlc()">
+
+							<span style="display: none" id="dlclabel">Km</span>
+								
+
+							<span id="dlcERRO" style="display: none; color: red;">Selecione uma das opções.</span>
+							<span id="dlcERRO2" style="display: none; color: red;">Valor incorrecto.</span>								 
+
+						</div>
+
+					</div>
+
+					<!----------->
+
+
+					<!-- ROW 8 -->
+					<div class="row"> 
+
+						<div class="col-md-3">
+							<label for="inlineRadioOptions3">Montagem:</label>
+						</div>
+
+						<div class="col">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="mntN" value="option1" oninput="showmntP(), validmnt()">
+							  <label class="form-check-label" for="mntN">Não </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="mntS" value="option2" oninput="showmntP(), validmnt()" >
+							  <label class="form-check-label" for="mntS">Sim</label>
+							</div>	
+
+							<input  style="display: none" id="mntP" name="mntP" class="input-box" type="number" step="any" oninput="validmnt()">
+
+							<span style="display: none" id="mntlabel">€</span>						
+								
+
+							<span id="mntERRO" style="display: none; color: red;">Selecione uma das opções.</span>
+							<span id="mntERRO2" style="display: none; color: red;">Valor incorrecto.</span>
+														 
+
+						</div>
+					</div>
+					<!----------->
+
+
+
+ 
+
+
+
+
+
+
+<br><br>
+
+					
+		
+			<input id="calc-btn" type="button" onClick="showKM(), showmntP(), validcomp(), validalt(), validtela(), validdlc(), validmnt(), confirmvalid(), calc()" value="CALCULAR" style="color:#fff" />
+
+
+			</div>
+
+
+
+	
+		
+		
+
+
+	
+				
+
+				
+					
+
+				
+
+			
+			
+			
+
+		
+
+		
+
+		
+
+
+			
+
+		<br><br>
+
+					<table class="table" id="myTable2">
+					
+					  <thead>
+					    <tr class="align-middle">
+					      <th scope="col">SERVIÇO</th>					      					      
+					      <th scope="col">PREÇO</th>					      
+					    </tr>
+					  </thead>
+					  <tbody>
+
+					    <tr class="align-middle"> <!--MATERIAL -->
+					      <td>Material</td>					      					      
+					      <td><span id="matPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--DESLOCAÇÃO -->
+					      <td>Deslocação</td>					      					      
+					      <td><span id="dlcPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--MONTAGEM -->
+					      <td>Montagem</td>					      					      
+					      <td><span id="mntPT"></span>€</td>					      
+					    </tr>
+
+					    <tr class="align-middle"> <!--TOTAL-->
+					      <td><b>TOTAL: </b></td>					      					      
+					      <td><b><span id="precototal"></span>€</b></td>					      
+					    </tr>
+
+					 </tbody>
+					</table>
+
+					<br><br>
+
+
+				<div class="mat-table">
+					<table class="table" id="myTable">
+
+					  <thead>
+					    <tr class="align-middle">
+					      <th scope="col">REFERÊNCIA</th>
+					      <th scope="col">ITEM</th>
+					      <th scope="col">IMAGEM</th>
+					      <th scope="col">QTD</th>
+					      <th scope="col">UNI</th>
+					      <th scope="col">MEDIDA/UND</th>					      
+					      <th scope="col">PREÇO</th>
+					      
+					    </tr>
+					  </thead>
+
+
+					  <tbody>
+					    <tr class="align-middle"> <!--PERFIL WALL-->
+					      <td>301.10.YPWBR</td>
+					      <td>Perfil Wall </td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/psw.jpg" ></div></td>
+					      <td><span id="pswMT"></span></td>
+					      <td>M</td>
+					      <td><span id="pswhu"></span> Und (<span id="pswhmu"></span>) + <span id="pswvu"></span> Und (<span id="pswvmu"></span>)</td>					      
+					      <td><span id="pswPT"></span>€</td>
+					      
+					    </tr>
+
+					    
+
+					    <tr class="align-middle"> <!--PERFIL WALL REMATE-->
+					      <td>301.10.YPRWBR</td>
+					      <td>Perfil Wall Remate</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/pwr.jpg" ></div></td>
+					      <td><span id="pwrMT"></span></td>
+					      <td>M</td>
+					      <td><span id="pwrhu"></span> Und (<span id="pwrhmu"></span>) + <span id="pwrvu"></span> Und (<span id="pwrvmu"></span>)</td>				      
+					      <td><span id="pwrPT"></span>€</td>
+					    </tr> 
+
+
+					    <tr class="align-middle"> <!-- YALE90-->
+					      <td>303.10.YALE90</td>
+					      <td>Ligador Esquadria YALE90</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/yale90.jpg"></div></td>
+					      <td><span id="yale90U"></span></td>
+					      <td>UND</td>
+					      <td>-</td>					      
+					      <td><span id="yale90PT"></span>€</td>
+					    </tr>					    
+
+					    
+
+					    <tr class="align-middle" id="row-yal180"> <!-- YAL180-->
+					      <td>303.10.YAL180</td>
+					      <td>Ligador YAL180</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/yal180.jpg"></div></td>
+					      <td><span id="yal180U"></span></td>
+					      <td>UND</td>
+					      <td>-</td>					      
+					      <td><span id="yal180PT"></span>€</td>
+					    </tr>				    
+
+					     
+
+					     <tr class="align-middle" id="row-pernos"> <!--PERNO M6X10 -->
+					      <td>303.10.YAFD916M0610</td>
+					      <td>Perno DIN 916 M6x10</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/pernom610.jpg" ></div></td>
+					      <td><span id="pernosU"></span></td>
+					      <td>UND</td>
+					      <td>-</td>					      
+					      <td><span id="pernosM610PT"></span>€</td>
+					    </tr>
+
+					    
+
+					     <tr class="align-middle"> <!-- TELA -->
+					      <td>201.100.ID0032</td>
+					      <td>Tela <span id="telatype"></span></td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/tela.jpg" ></div></td>					      
+					      <td><span id="telaarea"></span></td>	
+					      <td>M2</td>
+					      <td><span id="telacomp"></span> x <span id="telaalt"></span></td>    
+					      <td><span id="telaPT"></span>€</td>
+					    </tr>					    
+
+					     <tr class="align-middle"> <!--CLIPSOONS -->
+					      <td>303.10.YACLIPSOON</td>
+					      <td>Clipsoon</td>
+					      <td><div class="img-box"><img class="item-img" src="img/items/clipsoon.jpg" ></div></td>
+					      <td><span id="clipsoonUT"></span></td>
+					      <td>UND</td>
+					      <td>-</td>					      
+					      <td><span id="clipsoonPT"></span>€</td>
+					    </tr>				    
+
+					    
+					  </tbody>
+					</table>
+				</div>
+
+
+</div> <!--CONTAINER-->
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="js/precos.js"></script>
+<script type="text/javascript" src="bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js" ></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+
+
+
+
+
+	
+
+	function showKM() {
+	if (document.getElementById("dlcS").checked == true) {
+
+		document.getElementById("dlcKM").style.display = "inline";
+		document.getElementById("dlclabel").style.display = "inline";
+
+	}
+
+	else {
+
+		document.getElementById("dlcKM").style.display = "none";
+		document.getElementById("dlclabel").style.display = "none";
+
+	}
+	}
+
+
+
+	function showmntP() {
+	if (document.getElementById("mntS").checked == true) {
+
+		document.getElementById("mntP").style.display = "inline";
+		document.getElementById("mntlabel").style.display = "inline";
+
+	}
+
+	else {
+
+		document.getElementById("mntP").style.display = "none";
+		document.getElementById("mntlabel").style.display = "none";
+
+	}
+	}
+
+
+	
+
+
+
+
+
+
+	document.getElementById('myTable').style.display = "none";
+
+	document.getElementById('myTable2').style.display = "none";
+
+
+
+
+
+		function validcomp() {
+		//comp
+		if (document.getElementById("comp").value == "" || document.getElementById("comp").value <= 0 ) { 
+
+        	document.getElementById("comp").style.border = "2px solid red";
+        	document.getElementById("compERRO").style.display = "inline";
+        }
+        else {        	
+        	document.getElementById("comp").style.border = "";
+        	document.getElementById("compERRO").style.display = "none";	
+        }
+        //-------------
+    	}
+        
+
+        function validalt() {
+        //alt
+		if (document.getElementById("alt").value == "" || document.getElementById("alt").value <= 0) {        	
+        	
+        	document.getElementById("alt").style.border = "2px solid red";
+        	document.getElementById("altERRO").style.display = "inline";
+        }
+        else {        	
+        	document.getElementById("alt").style.border = "";
+        	document.getElementById("altERRO").style.display = "none";
+        }
+        //-------------
+    	}
+    	
+
+    	
+
+
+        
+    	 
+
+
+    	 
+
+
+    	 function validtela() {
+
+    	 //radio tela
+        if (document.getElementById("telanada").checked ||
+        	document.getElementById("telavinil").checked ||
+        	document.getElementById("telaimp").checked
+        	) {
+
+        	document.getElementById("telaERRO").style.display = "none";
+
+        }
+
+        else {
+        	document.getElementById("telaERRO").style.display = "inline";
+
+
+        }
+
+        //--------------
+
+    	}
+
+
+		function validdlc() {  
+
+        //dlc radio
+
+        if (document.getElementById("dlcN").checked ||
+        	document.getElementById("dlcS").checked
+        	
+        	) {
+
+        	document.getElementById("dlcERRO").style.display = "none";
+        }
+        else {
+        	document.getElementById("dlcERRO").style.display = "inline";
+        }
+        //--------------
+
+         //dlc inputbox
+
+
+        if (document.getElementById("dlcS").checked &&
+         (  document.getElementById("dlcKM").value == "" || document.getElementById("dlcKM").value <= 0 )
+
+         ) {
+        	document.getElementById("dlcERRO2").style.display = "inline";
+        	document.getElementById("dlcKM").style.border = "2px solid red";
+	        }
+	    
+	    else {
+
+	        document.getElementById("dlcERRO2").style.display = "none";
+	        document.getElementById("dlcKM").style.border = "";
+	    }
+
+
+	    if (document.getElementById("dlcN").checked) {
+	    	document.getElementById("dlcKM").value = 0;
+	    }
+	    else {
+	    	
+	    }
+    	//--------------
+
+		}
+
+
+		function validmnt() { 
+		
+		//mnt radio
+
+        if (document.getElementById("mntN").checked ||
+        	document.getElementById("mntS").checked
+        	
+        	) {
+
+        	document.getElementById("mntERRO").style.display = "none";
+        }
+        else {
+        	document.getElementById("mntERRO").style.display = "inline";
+        }
+        //--------------
+
+		//mnt inputbox
+
+
+        if (document.getElementById("mntS").checked &&
+         (  document.getElementById("mntP").value == "" || document.getElementById("mntP").value <= 0 )
+
+         ) {
+        	document.getElementById("mntERRO2").style.display = "inline";
+        	document.getElementById("mntP").style.border = "2px solid red";
+	        }
+	    
+	    else {
+
+	        document.getElementById("mntERRO2").style.display = "none";
+	        document.getElementById("mntP").style.border = "";
+	    }
+
+
+	    if (document.getElementById("mntN").checked) {
+	    	document.getElementById("mntP").value = 0;
+	    }
+	    else {
+	    	
+	    }
+    	//--------------
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function confirmvalid() {
+        //verificar se está tudo preenchido para mostrar tabela
+        if (
+			document.getElementById("comp").value == "" || document.getElementById("comp").value <= 0 ||
+
+			document.getElementById("alt").value == "" || document.getElementById("alt").value <= 0 ||
+
+			
+
+			document.getElementById("telanada").checked == false && document.getElementById("telavinil").checked == false && document.getElementById("telaimp").checked == false ||
+
+			document.getElementById("dlcN").checked == false && document.getElementById("dlcS").checked == false ||
+
+			( document.getElementById("dlcS").checked && (  document.getElementById("dlcKM").value == "" || document.getElementById("dlcKM").value <= 0 )	)  ||
+
+			document.getElementById("mntN").checked == false && document.getElementById("mntS").checked == false ||
+
+			( document.getElementById("mntS").checked && (  document.getElementById("mntP").value == "" || document.getElementById("mntP").value <= 0 )	)
+
+			
+			
+			) {
+
+			document.getElementById('myTable').style.display = "none";
+			document.getElementById('myTable2').style.display = "none";
+			
+		}
+		else {
+			document.getElementById('myTable').style.display = "table";
+			document.getElementById('myTable2').style.display = "table";			
+		}
+
+
+}
+
+
+
+
+
+	
+
+</script>
+
+<script type="text/javascript">	
+
+	function calc()
+{
+        var alt = parseFloat(document.getElementById("alt").value);
+        var comp = parseFloat(document.getElementById("comp").value);
+        var area = alt * comp;
+        
+        
+       
+
+        var medidaMin = Math.min(alt, comp);
+        var medidaMax = Math.max(alt, comp);
+
+
+
+		//PERFIL SPEED WALL//
+
+		//VERTICAL//
+		var pswVM = alt * 2;    		  //MEDIDA PERFIL SPEED WALL VERTICAL//
+		var pswVU = Math.ceil(alt / 4) * 2; //Nº UNIDADES PERFIL  SPEED WALL VERTICAL//
+		var pswVMU = pswVM / pswVU;       //MEDIDA DE 1 UNIDADE PERFIL SPEED WALL VERTICAL//
+
+
+		//HORIZONTAL//
+		var pswHM = comp * 2;    		  //MEDIDA PERFIL SPEED WALL HORIZONTAL//
+		var pswHU = Math.ceil(comp / 4) * 2; //Nº UNIDADES PERFIL SPEED WALL HORIZONTAL//
+		var pswHMU = pswHM / pswHU;       //MEDIDA DE 1 UNIDADE PERFIL SPEED WALL HORIZONTAL//
+
+
+
+		//TOTAL//
+		var pswUT = pswVU + pswHU; //TOTAL UNIDADES PERFIL SPEED WALL //
+		var pswMT = pswVM + pswHM; //TOTAL MEDIDA(M) PERFIL SPEED WALL //		
+
+		document.getElementById("pswMT").innerHTML = parseFloat( pswMT.toFixed(3) );
+
+		document.getElementById("pswhu").innerHTML = pswHU;
+		document.getElementById("pswhmu").innerHTML = parseFloat( pswHMU.toFixed(3) )+ "m";
+
+		
+		document.getElementById("pswvu").innerHTML = pswVU;
+		document.getElementById("pswvmu").innerHTML = parseFloat( pswVMU.toFixed(3) )+ "m";
+
+		//---------------------------//PRECOS//
+
+		var pswHPT = pswPM * pswHM; //PREÇO TOTAL PERFIL SPEED WALL HORIZONTAL//
+		var pswVPT = pswPM * pswVM;	//PREÇO TOTAL PERFIL SPEED WALL VERTICAL//
+
+		var pswPT = pswHPT + pswVPT;
+
+		document.getElementById("pswPT").innerHTML = pswPT.toFixed(2);
+														           
+        
+        //---------------------------------------------------------------//
+
+
+
+        
+        
+        //PERFIL WALL REMATE//
+        //HORIZONTAL//
+        
+        document.getElementById("pwrhu").innerHTML = pswHU;
+		document.getElementById("pwrhmu").innerHTML = parseFloat( pswHMU.toFixed(3) )+ "m";
+
+		//VERTICAL//
+		
+		document.getElementById("pwrvu").innerHTML = pswVU;
+		document.getElementById("pwrvmu").innerHTML = parseFloat( pswVMU.toFixed(3) )+ "m";
+
+		//TOTAL
+
+		document.getElementById("pwrMT").innerHTML = parseFloat( pswMT.toFixed(3) );
+
+
+
+		//---------------------------//PRECOS//
+
+		var pwrHPT = pwrPM * pswHM; //PREÇO TOTAL PERFIL WALL REMATE HORIZONTAL//
+		var pwrVPT = pwrPM * pswVM; //PREÇO TOTAL PERFIL WALL REMATE VERTICAL//
+		var pwrPT = pwrHPT + pwrVPT;
+
+		document.getElementById("pwrPT").innerHTML = pwrPT.toFixed(2);
+		
+
+        //---------------------------------------------------------------//
+
+        //YALE90
+
+        var yale90U = 4;
+        var yale90PT = yale90PU * yale90U;
+
+        document.getElementById("yale90U").innerHTML = yale90U;
+        document.getElementById("yale90PT").innerHTML = yale90PT;
+
+
+
+        //---------------------------------------------------------------//
+
+        
+
+
+        //YAL180//
+
+
+        var yal180Und = (pswUT * 1) - 4;
+
+
+        document.getElementById("yal180U").innerHTML = yal180Und;
+
+
+        if (yal180Und <= 0) {
+        	yal180Und = 0;
+        	document.getElementById("row-yal180").style.display = "none";
+        }
+
+        else {
+        	yal180Und = yal180Und;
+        	document.getElementById("row-yal180").style.display = "table-row";
+        }
+
+
+        //---------------------------//PRECOS//
+
+        var yal180PT = yal180PU * yal180Und;
+        document.getElementById("yal180PT").innerHTML = yal180PT.toFixed(2);
+
+        //---------------------------------------------------------------//
+
+
+        
+
+        
+
+        //PERNOS M6X10//
+
+        var pernosU = (yal180Und * 4) + (yale90U * 4);        
+
+
+		document.getElementById("pernosU").innerHTML = pernosU;
+
+		if (pernosU <= 0) {
+
+			pernosU = 0;
+			document.getElementById("row-pernos").style.display = "none";
+		}
+
+		else {
+			pernosU = pernosU;
+			document.getElementById("row-pernos").style.display = "table-row";
+		}
+
+		//---------------------------//PRECOS//
+		var pernosM610PT = pernoM610PU * pernosU;
+
+		document.getElementById("pernosM610PT").innerHTML = pernosM610PT.toFixed(2);
+
+        
+        //---------------------------------------------------------------//
+
+
+		
+
+
+
+
+
+
+
+        //TELA//
+        var telaU = 1;               
+        var telacomp = (comp - 0.02);
+        var telaalt = (alt - 0.02);
+        var telaarea = telaalt * telacomp;
+
+        var compbleed2 = comp + 0.04;
+        var altbleed2 = alt + 0.04;
+        var areableed2 = compbleed2 * altbleed2;
+
+        document.getElementById("telaarea").innerHTML = parseFloat( telaarea.toFixed(3) );
+        document.getElementById("telacomp").innerHTML = parseFloat( telacomp.toFixed(3) )+ "m";
+        document.getElementById("telaalt").innerHTML = parseFloat( telaalt.toFixed(3) )+ "m";
+
+
+        
+
+
+
+
+        //---------------------------//PRECOS//
+              
+
+        
+
+
+        var telatype;
+        var telatypePM2;
+
+        if (document.getElementById("telanada").checked) {
+        	telatype = "- Baquelite";
+        	telatypePM2 = 0;
+        }
+
+        else if (document.getElementById("telavinil").checked) {
+        	telatype = "- Vinil Translúcido";
+        	telatypePM2 = telavinilPM2;
+        }
+
+        else if (document.getElementById("telaimp").checked){
+        	telatype = "- Impressão Digital";
+        	telatypePM2 = telaimpPM2;
+        }
+
+        else {
+        	telatypePM2 = 0;
+        }
+
+
+        document.getElementById("telatype").innerHTML = telatype;
+
+
+         var telatypePT = telatypePM2 * areableed2; 
+
+         var telaPT = (telaPM2 * telaarea) + telatypePT; 
+
+         document.getElementById("telaPT").innerHTML = telaPT.toFixed(2);
+
+
+
+        //---------------------------------------------------------------//
+
+
+
+        //CLIPSOONS//
+
+        var clipsoonUV;
+        var clipsoonUH;
+        
+
+        if (alt <= 0.60) {
+
+        clipsoonUV = 3 * 2;
+
+        }
+
+        else  { 
+        clipsoonUV = Math.ceil(alt / 0.20) * 2; 
+
+    	}
+
+
+
+    	if (comp <= 0.60) {
+
+        clipsoonUH = 3 * 2;
+
+        }
+
+        else  { 
+        clipsoonUH = Math.ceil(comp / 0.20) * 2; 
+
+    	}
+        
+        
+        var clipsoonUT = clipsoonUV + clipsoonUH;
+
+        document.getElementById("clipsoonUT").innerHTML = clipsoonUT;
+
+        //---------------------------//PRECOS//
+        var clipsoonPT = clipsoonPU * clipsoonUT;
+
+        document.getElementById("clipsoonPT").innerHTML = clipsoonPT.toFixed(2);
+
+
+
+        //---------------------------------------------------------------//
+
+       
+
+        //DESLOCAÇÃO//
+
+        var dlcKM = parseFloat(document.getElementById("dlcKM").value);
+
+
+        //---------PREÇO
+
+        var dlcPT = dlcPKM * dlcKM;
+
+        document.getElementById("dlcPT").innerHTML = dlcPT.toFixed(2);
+
+        //---------------------------------------------------------------//
+
+
+        //MONTAGEM//
+
+        //---------PREÇO
+
+        var mntP = parseFloat(document.getElementById("mntP").value);
+
+
+
+
+        document.getElementById("mntPT").innerHTML = mntP.toFixed(2);
+
+        
+
+        //---------------------------------------------------------------//
+
+
+        
+
+
+        //MAT PREÇO TOTAL//
+
+        var matPT = 		pswPT+							
+							pwrPT+
+
+							yale90PT +
+							
+							
+							
+							
+							yal180PT+
+							
+							
+							pernosM610PT+
+							
+							telaPT+
+							clipsoonPT												
+        				 ;
+
+
+
+         document.getElementById("matPT").innerHTML = matPT.toFixed(2);
+        //---------------------------------------------------------------//
+
+        //PREÇO TOTAL//
+
+        var precototal = matPT + dlcPT + mntP;
+
+         document.getElementById("precototal").innerHTML = precototal.toFixed(2);
+        //---------------------------------------------------------------//
+
+
+
+        
+
+
+
+       
+}
+
+
+
+</script>
+<script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".pcard, .plogo"), {
+            max: 15,
+            speed: 400,
+            glare: 1,
+            "max-glare": 0.4,
+        });	
+        </script>   
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
